@@ -1,0 +1,13 @@
+line_id,expected_action,expected_invoices,note
+B01,match,SI-1001,exact ref + amount
+B02,match,SI-1003,ref without prefix
+B03,review,,two identical open invoices - ambiguous
+B04,match,SI-1006,short by 50 = bank charge within tolerance
+B05,match,SI-1007;SI-1008,one payment covers two invoices
+B06,match,SI-1009,partial payment
+B07,match,SI-1010,alias only
+B08,review,,unidentified deposit
+B09,match,SI-1002,alias only
+B10,review,,overpayment by 1000
+B11,match,SI-1012,alias only
+B12,review,,bank fee - not a customer receipt
